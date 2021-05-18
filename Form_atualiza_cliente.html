@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <!--Form alterar cliente 
+	    MARCO ANTONIO RIBEIRO GAMA
+        MAT. 1810478300006-->
+<body>
+<head>
+    <style>.Err{color:#FF0000}</style>
+</head>
+<form action="Altera_cliente.php" method="POST">
+    <fieldset>
+        <legend>3DAW_1sem21/CLIENTE</legend>
+        Nome:<input type="text" name="NOME"><span class="Err">*<?php echo $NOME_Err?></span><br><br>
+        Sobrenome:<input type="text" name="SNOME"><span class="Err">*<?php echo $SNOME_Err?></span><br><br>
+        CPF:<input type="number" name="CPF" minlength="11" maxlength="11"><span class="Err">*<?php echo $CPF_Err?></span>
+        CEP:<input type="number" name="CEP" minlength="8" maxlength="8"><span class="Err">*<?php echo $CEP_Err?></span><br><br>
+        Endereço:<input type="text" name="END">*<?php echo $END_Err?></span><br><br>
+        Cidade:<input type="text" name="CIDADE">
+		Estado:<input type="text" name="ESTADO">
+    </fieldset><br>
+    <input type="submit" name="submit" value="enviar">
+	<input type="submit" name="submit" value="voltar" formaction="Form_cliente.html">
+    <input type="submit" name="submit" value="Listar" formaction="Lista_clientes.php">
+</form>
+</body>
+</html>
